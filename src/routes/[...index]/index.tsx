@@ -3,7 +3,7 @@ import { routeLoader$ } from "@builder.io/qwik-city";
 import { fetchOneEntry, Content } from "@builder.io/sdk-qwik";
 import { CUSTOM_COMPONENTS } from "~/components/builder-registry";
 
-export const BUILDER_PUBLIC_API_KEY = "20bcae44b4ad48a997c3400a27e35d4a";
+export const BUILDER_PUBLIC_API_KEY = import.meta.env.PUBLIC_BUILDER_API_KEY;
 export const BUILDER_MODEL = "page";
 
 // Use Qwik City's `useBuilderContent` to get your content from Builder.
